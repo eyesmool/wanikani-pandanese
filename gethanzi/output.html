@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="notranslate" name="google"/>
+  <meta content="17d542850df8a50cdb890e55d9916892d36f3bad0ab9e7f576bb3153c9caaefe" name="ahrefs-site-verification"/>
+  <title>
+   Pandanese
+  </title>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/favicon-256x256.png" rel="icon" sizes="256x256" type="image/png"/>
+  <link href="/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+  <link href="/favicon-128x128.png" rel="icon" sizes="128x128" type="image/png"/>
+  <link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+  <link href="/favicon-64x64.png" rel="icon" sizes="64x64" type="image/png"/>
+  <link href="/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/assets/application-64865a596211b318106d440ca7bcc5ec49b2de3482b826ddc02ca940a4bbd0fc.css" media="all" rel="stylesheet">
+   <!-- Google Tag Manager -->
+   <script>
+    dataLayer = [{
+      'user_email': '',
+      'user_created_at': '0'
+    }];
+   </script>
+   <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-57GMZ2W');
+   </script>
+   <!-- End Google Tag Manager -->
+   <script src="/assets/application-c56dabdc34d43b93029106b1be5e7312f792941c8171b86a461b143d87f2a4f4.js">
+   </script>
+   <script id="tmplWelcomeCardView" type="x-tmpl-mustache">
+    <div data-bind="card" data-index="{{index}}">
+    <div class="card-flashcard card-flashcard--learn">
+      <div class="card-flashcard_front box -card">
+
+        <div class="{{css_class}} card-flashcard_question">
+          {{{back}}}
+        </div>
+
+        <div class="card-flashcard_lesson">
+          <nav data-bind="slideNav">
+            {{#slides}}
+              <a data-action="openTab" data-id="{{title}}">{{title}}</a>
+            {{/slides}}
+          </nav>
+
+          <div data-bind="slides">
+            {{#slides}}
+              <div data-bind="slide" data-id="{{title}}">
+                <article>{{{body}}}</article>
+              </div>
+            {{/slides}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+   </script>
+   <script id="tmplCardView" type="x-tmpl-mustache">
+    <div data-bind="card" data-index="{{index}}">
+    <div class="learn-card-parent">
+      <div class="learn-card">
+
+        <div class="card-question-wrapper">
+          <div class="{{css_class}} card-question">
+            {{{back}}}
+          </div>
+        </div>
+
+        <div class="card-tabs-wrapper">
+          <div class="box -card card-tabs">
+            <div class="flashcard-lesson">
+            
+              <nav data-bind="slideNav" class="learn-navigation">
+                {{#slides}}
+                  <a data-action="openTab" data-id="{{title}}">{{title}}</a>
+                {{/slides}}
+              </nav>
+
+              <div data-bind="slides">
+                {{#slides}}
+                  <div data-bind="slide" data-id="{{title}}" class="learn-slide">
+                    <div class="learn-content">
+                      <article>{{{body}}}</article>
+                    </div>
+                  </div>
+                {{/slides}}
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   </script>
+   <script id="tmplStatusView" type="x-tmpl-mustache">
+    <div class="statusbar">
+    <div class="progress-bar -review">
+      <div class="progress-bar_gauge">
+        <div class="progress-bar_progress -streak" style="width:{{percentage}}%"></div>
+      </div>
+      <div class="progress-bar_label">
+        {{completed}}/{{total}}
+      </div>
+    </div>
+  </div>
+   </script>
+   <script id="tmplTertiaryActionsView" type="x-tmpl-mustache">
+    <!--a class="button -tertiary" href="{{ mailto }}">Report an issue</a-->
+  <a class="button -tertiary" href="#" data-action="customizeCard">Customize Card</a>
+  <a class="button" href="#" data-action="saveChanges" style="display: none;">Save Changes</a>
+   </script>
+   <script id="tmplQuestionView" type="x-tmpl-mustache">
+    <div data-bind="question" data-index="{{index}}">
+    <div class="card-flashcard card-flashcard--review -{{ questionCssClass }}">
+
+      <div class="card-flashcard_front  box -card">
+        <div class="{{ css_class }} card-flashcard_question">
+          <label for='answer' class='card-flashcard_label'>{{ card_type }}</label>
+          {{{ front }}}
+        </div>
+        <div class="card-flashcard_answer tantalizing">
+          <label for='answer' class='card-flashcard_label'>{{ question }}</label>
+          <input id='answer' data-bind='answer' value='{{name}}' autocomplete='off' />
+        </div>
+      </div>
+
+      <div class="card-flashcard_back box -card">
+        <div class="learn-content">
+          {{#slides}}
+            <section>
+              <h2>{{ title }}</h2>
+              {{{ body }}}
+            </section>
+            <hr/>
+          {{/slides}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+   </script>
+   <script id="tmplLoadingView" type="x-tmpl-mustache">
+    <div class="overlay -loading">
+    <div class="modal" role="layout">
+      <div data-bind="spinner"></div>
+    </div>
+  </div>
+   </script>
+   <script id="tmplVideoView" type="x-tmpl-mustache">
+    <div class="overlay -video">
+    <nav class="overlay_nav">
+      <a data-action="closeOverlay">close</a>
+    </nav>
+    <div class="modal" role="layout">
+      <div class="-video">
+        <div class="wistia_responsive_padding" style="position:relative;margin:1rem"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="{{ video_url }}" title="Video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+        <script src="https://fast.wistia.net/assets/external/E-v1.js" async>
+      </div>
+    </div>
+  </div>
+   </script>
+   <meta content="authenticity_token" name="csrf-param">
+    <meta content="pExxR_G5t3866cQZg7trdJkCHb81DMmuhPB10y3eXPpOpEGoT7FTZlsCE98yXWf7s865bzExCx--WyoHUrkFyA" name="csrf-token">
+    </meta>
+   </meta>
+  </link>
+ </head>
+ <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-57GMZ2W" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="application" role="layout">
+   <nav class="application-nav -marketing">
+    <div class="wrapper -marketing" role="layout">
+     <div class="container">
+      <div class="row hide-on-mobile">
+       <div class="col-xs-2">
+        <a href="/">
+         <div class="logo-logotype">
+          Pandanese
+         </div>
+        </a>
+       </div>
+       <div class="col-xs-3 hide-on-scroll">
+        <div class="application-nav_actions -left">
+         <a class="button_link -center" href="/dictionary">
+          <big>
+           Dictionary
+          </big>
+         </a>
+        </div>
+       </div>
+       <div class="col-xs-7 hide-on-scroll">
+        <div class="application-nav_actions -right">
+         <a class="button_link -center" href="tel:18338276927">
+          <big>
+           1 (833) 827-6927
+          </big>
+         </a>
+         <a class="button_link -center" href="/login">
+          <big>
+           Login
+          </big>
+         </a>
+         <a class="button -nav" href="/register">
+          <big>
+           Sign up
+          </big>
+          <span class="count">
+           Free
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="col-xs-3 show-on-scroll">
+        <div class="application-nav_actions -left">
+        </div>
+       </div>
+       <div class="col-xs-7 show-on-scroll">
+        <div class="application-nav_actions -right">
+         <form accept-charset="UTF-8" action="/users" class="singleton-form" id="new_user" method="post" name="new_user_header">
+          <input autocomplete="off" name="authenticity_token" type="hidden" value="u8EGe_ZIzuwwXbsjWXjwPTPEhQihLoMkH5Bh9N0Af0gBMf1lrwt4Af4Z2RmIWmMiG2z06jqM3LiNR5Tsz0Kikg"/>
+          <div class="singleton-form_input">
+           <input id="email" name="user[email]" placeholder="Enter your email" type="email"/>
+          </div>
+          <script src="https://www.recaptcha.net/recaptcha/api.js?render=6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl">
+          </script>
+          <script>
+           // Define function so that we can call it again later if we need to reset it
+          // This executes reCAPTCHA and then calls our callback.
+          function executeRecaptchaForNavsignup() {
+            grecaptcha.ready(function() {
+              grecaptcha.execute('6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl', {action: 'navsignup'}).then(function(token) {
+                setInputWithRecaptchaResponseTokenForNavsignup('g-recaptcha-response-data-navsignup', token)
+              });
+            });
+          };
+          // Invoke immediately
+          executeRecaptchaForNavsignup()
+
+          // Async variant so you can await this function from another async function (no need for
+          // an explicit callback function then!)
+          // Returns a Promise that resolves with the response token.
+          async function executeRecaptchaForNavsignupAsync() {
+            return new Promise((resolve, reject) => {
+             grecaptcha.ready(async function() {
+                resolve(await grecaptcha.execute('6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl', {action: 'navsignup'}))
+              });
+            })
+          };
+
+                  var setInputWithRecaptchaResponseTokenForNavsignup = function(id, token) {
+          var element = document.getElementById(id);
+          if (element !== null) element.value = token;
+        }
+          </script>
+          <input class="g-recaptcha g-recaptcha-response" data-sitekey="6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl" id="g-recaptcha-response-data-navsignup" name="g-recaptcha-response-data[navsignup]" type="hidden"/>
+          <div class="singleton-form_action">
+           <input class="button" data-disable-with="Create User" name="commit" type="submit" value="Sign up now"/>
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+      <div class="row show-on-mobile">
+       <div class="col-xs-2">
+        <a href="/">
+         <div class="logo-logotype">
+          Pandanese
+         </div>
+        </a>
+       </div>
+       <div class="col-xs-10">
+        <div class="application-nav_actions -right">
+         <button class="button -nav" id="mobile-nav-toggle">
+          <svg class="bi bi-list" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+           <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" fill_rule="evenodd">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+       <div class="mobile_nav">
+        <a class="button_link -center" href="/dictionary">
+         <big>
+          Dictionary
+         </big>
+        </a>
+        <a class="button_link -center" href="tel:18338276927">
+         <big>
+          1 (833) 827-6927
+         </big>
+        </a>
+        <a class="button_link -center" href="/login">
+         <big>
+          Login
+         </big>
+        </a>
+        <a class="button -nav" href="/register">
+         <big>
+          Sign up
+         </big>
+         <span class="count">
+          Free
+         </span>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </nav>
+   <main class="application-main -marketing" role="layout">
+    <div class="wrapper -marketing" role="layout">
+     <div class="box -padded-v">
+      <div class="container">
+       <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+         <div class="box -padded-v">
+          <div class="container">
+           <div class="row">
+            <div class="col-xs-12">
+             <form accept-charset="UTF-8" action="/search" html="class search-bar" method="get">
+              <label for="Search_the_dictionary:">
+               Search the dictionary:
+              </label>
+              <div class="search-bar -wrapper -secondary">
+               <input id="search" name="q" placeholder="Type in Pinyin, 汉字, or in English" type="text" value="均"/>
+               <button name="button" type="submit">
+                <img src="/assets/search-2267f886fc2024a7dbbd220109c57895d885788d5ebd3a01b380a5a4786ac725.svg"/>
+               </button>
+              </div>
+             </form>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="box -padded-v -half">
+          <div class="container">
+           <div class="row">
+            <div class="col-xs-12">
+             <div class="box -delineated -padded">
+              <div class="container">
+               <div class="row">
+                <div class="col-xs-3">
+                 <div class="box -apart">
+                  <a href="/learn-chinese/character/均">
+                   <div class="flashcard-preview">
+                    <div class="flashcard">
+                     <div class="flashcard_content character locked" lang="zh-CN">
+                      <div class="flashcard_front">
+                       <big>
+                        均
+                       </big>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </a>
+                 </div>
+                 <div class="box">
+                  <audio class="audio-player" controls="" controlslist="nodownload" preload="auto" style="width: 100%;">
+                   <source src="https://s3.amazonaws.com/audio-pandanese/均.mp3"/>
+                   Your browser does not support the audio element.
+                  </audio>
+                 </div>
+                </div>
+                <div class="col-xs-9">
+                 <div class="box -card -apart">
+                  <div class="definition box -slide -padded -half">
+                   <label class="definition_label">
+                    Meaning
+                   </label>
+                   <div class="definition_value">
+                    equal, even, all
+                   </div>
+                  </div>
+                  <div class="definition box -slide -padded -half">
+                   <div class="definition_label">
+                    Meaning Mnemonic
+                   </div>
+                   <div class="definition_value">
+                    <em>
+                     If you bruise yourself, just
+                     <strong>
+                      wrap
+                     </strong>
+                     (勹) some
+                     <strong>
+                      earth
+                     </strong>
+                     (土) in a bag and put it on your wound.  The effectiveness is equal to a bag of
+                     <strong>
+                      ice
+                     </strong>
+                     (冫).
+                    </em>
+                   </div>
+                  </div>
+                  <div class="definition box -slide -padded -half">
+                   <label class="definition_label">
+                    Reading
+                   </label>
+                   <div class="definition_value">
+                    jūn
+                   </div>
+                  </div>
+                  <div class="definition box -slide -padded -half">
+                   <div class="definition_label">
+                    Reading Mnemonic
+                   </div>
+                   <div class="definition_value">
+                    <em>
+                     I tried it back in
+                     <strong>
+                      June
+                     </strong>
+                     (jūn), and I must tell you, it does not work at all.
+                    </em>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="row">
+          <nav class="nav -pagination">
+          </nav>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="blog-posts__cta">
+         <div class="blog-posts__cta__content">
+          <h2 class="blog-posts__cta__title">
+           The easiest way to learn Chinese &amp; build vocabulary
+          </h2>
+          <div class="blog-posts__cta__description">
+           Learn more than 6,000 hanzi and vocabulary in a single year.
+          </div>
+          <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+           <input autocomplete="off" name="authenticity_token" type="hidden" value="hmOoW2iSTPQYn4CTKUD3-Q90UqjUjQt_msC9Pq1muiM8k1NFMdH6Gdbb4qn4YmTmJ9wjSk8vVOMIF0gmvyRn-Q"/>
+           <div class="blog-posts__cta__form">
+            <input id="email" name="user[email]" placeholder="Enter your email" type="email"/>
+            <script src="https://www.recaptcha.net/recaptcha/api.js?render=6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl">
+            </script>
+            <script>
+             // Define function so that we can call it again later if we need to reset it
+          // This executes reCAPTCHA and then calls our callback.
+          function executeRecaptchaForSignup() {
+            grecaptcha.ready(function() {
+              grecaptcha.execute('6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl', {action: 'signup'}).then(function(token) {
+                setInputWithRecaptchaResponseTokenForSignup('g-recaptcha-response-data-signup', token)
+              });
+            });
+          };
+          // Invoke immediately
+          executeRecaptchaForSignup()
+
+          // Async variant so you can await this function from another async function (no need for
+          // an explicit callback function then!)
+          // Returns a Promise that resolves with the response token.
+          async function executeRecaptchaForSignupAsync() {
+            return new Promise((resolve, reject) => {
+             grecaptcha.ready(async function() {
+                resolve(await grecaptcha.execute('6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl', {action: 'signup'}))
+              });
+            })
+          };
+
+                  var setInputWithRecaptchaResponseTokenForSignup = function(id, token) {
+          var element = document.getElementById(id);
+          if (element !== null) element.value = token;
+        }
+            </script>
+            <input class="g-recaptcha g-recaptcha-response" data-sitekey="6Le4ePwUAAAAACCDB9CA7cSRQZf_LviVuSwMIsgl" id="g-recaptcha-response-data-signup" name="g-recaptcha-response-data[signup]" type="hidden"/>
+            <button class="blog-posts__cta-button" name="button" type="submit">
+             Sign up
+            </button>
+           </div>
+          </form>
+         </div>
+         <img class="blog-posts__cta__image" height="331px" src="/assets/panda-1da33f5dac7da1298a6c49260b2ed4ca20787a25cfa23dd5f5e71929cfd68d94.png" width="331px"/>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </main>
+   <footer class="application-footer">
+    <div class="wrapper -marketing" role="layout">
+     <div class="container">
+      <div class="row">
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="text">
+         <h3>
+          Resources
+         </h3>
+         <ul>
+          <li>
+           <a href="/dictionary">
+            Dictionary
+           </a>
+          </li>
+          <li>
+           <a href="/learn-chinese">
+            Mandarin flashcards
+           </a>
+          </li>
+          <li>
+           <a href="/learn-chinese">
+            Mandarin SRS system
+           </a>
+          </li>
+          <li>
+           <a href="/faq">
+            Frequently asked questions
+           </a>
+          </li>
+          <li>
+           <a href="https://www.pandanese.com/blog">
+            Blog
+           </a>
+          </li>
+          <li>
+           <a href="/support">
+            Contact Us
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="text">
+         <h3>
+          Fine print
+         </h3>
+         <ul>
+          <li>
+           <a href="/terms">
+            Terms &amp; conditions
+           </a>
+          </li>
+          <li>
+           <a href="/privacy">
+            Privacy policy
+           </a>
+          </li>
+          <li>
+          </li>
+          <li>
+           ©2024
+           <a href="https://www.xenon.io">
+            Xenon·io
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("IP0EXTbyCWZPMDmKeaLkawSNb95En8Vm");
+  analytics.page();
+  }}();
+  </script>
+ </body>
+</html>

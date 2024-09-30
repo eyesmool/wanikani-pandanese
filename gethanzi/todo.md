@@ -1,0 +1,1 @@
+- [ ] store a json file dictionary. look up dictionary before requesting site
