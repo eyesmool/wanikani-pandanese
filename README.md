@@ -3,10 +3,9 @@
 
 A Python script that extracts kanji, vocabulary, and radical data from [WaniKani](https://www.wanikani.com/) and formats it for Anki flashcards with clean HTML/CSS.
 
-![demo](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWcxNWN3ZGt0Njc2eGMzMHRnNWtkYWtkdWxmdjU5bjk1eDBqMm03NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9ITOVcfMDWwpMX6owE/giphy.gif)
-
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+![demo](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWcxNWN3ZGt0Njc2eGMzMHRnNWtkYWtkdWxmdjU5bjk1eDBqMm03NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9ITOVcfMDWwpMX6owE/giphy.gif)
 
 ## Features
 
