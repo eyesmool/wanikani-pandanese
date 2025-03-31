@@ -1,6 +1,4 @@
-Here's a professional GitHub README.md for your WaniKani scraper project:
 
-```markdown
 # WaniKani Scraper & Anki Formatter
 
 A Python script that extracts kanji, vocabulary, and radical data from [WaniKani](https://www.wanikani.com/) and formats it for Anki flashcards with clean HTML/CSS.
@@ -24,12 +22,7 @@ A Python script that extracts kanji, vocabulary, and radical data from [WaniKani
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/wanikani-scraper.git
-   cd wanikani-scraper
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+   cd wanikani
    ```
 
 ## Usage
@@ -38,17 +31,17 @@ A Python script that extracts kanji, vocabulary, and radical data from [WaniKani
 
 Look up a kanji:
 ```bash
-./wk.py kanji 漢 -f
+./wanikani.py kanji 漢 -f
 ```
 
 Look up vocabulary:
 ```bash
-./wk.py vocab 日本語 -r
+./wanikani.py vocab 日本語 -r
 ```
 
 Look up radicals:
 ```bash
-./wk.py radical hole
+./wanikani.py radical hole
 ```
 
 ### Options
@@ -93,18 +86,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
-```
 
-This README includes:
-1. Clear project description
-2. Feature highlights
-3. Installation instructions
-4. Usage examples with screenshots
-5. Dependency information
-6. License and contribution guidelines
 
-You may want to:
-- Add actual screenshots of the output
-- Include a demo GIF for the CLI
-- Add your Anki CSS styling if you want to share it
-- Adjust the installation path if your script has a different location
